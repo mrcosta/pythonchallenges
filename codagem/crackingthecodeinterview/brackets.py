@@ -9,12 +9,11 @@ def balance(brackets):
 
     for bracket in brackets:
         if bracket in openers_symbols:
-           openers.append(bracket)
+            openers.append(bracket)
         else:
-           last_opener = openers[len(openers) - 1]
-           if bracket == openers_to_closers[last_opener]:
-               openers.pop()
-           else:
-               return False
+            if openers != [] and bracket == openers_to_closers[openers[len(openers) - 1]]:
+                openers.pop()
+            else:
+                return False
 
     return openers == []
