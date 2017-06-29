@@ -11,7 +11,7 @@ def balance(brackets):
         if bracket in openers_symbols:
             openers.append(bracket)
         else:
-            if openers != [] and bracket == openers_to_closers[openers[len(openers) - 1]]:
+            if openers != [] and bracket == openers_to_closers[openers[-1]]:
                 openers.pop()
             else:
                 return False
