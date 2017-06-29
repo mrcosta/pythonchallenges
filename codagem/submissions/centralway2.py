@@ -10,10 +10,11 @@ def get_input(counter):
     return integers
 
 def find_z_from_integers(integers):
+    pass
     # 4, 40, 44, 400, 440
     # 1, 100, 110, 1000, 1100
-    for integer in integers:
-        if ((integer % 100) % 4):
+    #for integer in integers:
+        #if ((integer % 100) % 4):
 
 
 def print_result(results):
