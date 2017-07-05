@@ -1,8 +1,8 @@
-def reverse(input):
-    string_length = len(input)
+def reverse(string_to_revert):
+    string_length = len(string_to_revert)
     reversed_string = ''
     while string_length:
         string_length-= 1
-        reversed_string+= input[string_length]
+        reversed_string+= string_to_revert[string_length]
 
     return reversed_string
